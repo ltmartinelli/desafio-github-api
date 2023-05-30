@@ -1,8 +1,14 @@
 import './styles.css'
 
-export default function Button()
+type Props = {
+    text: string
+}
+
+export default function Button({ text }: Props)
 {
     return (
-        <h1>oioi</h1>
+        <div className="button">
+            {text}
+        </div>
     );
 }
