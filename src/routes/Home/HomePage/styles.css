@@ -1,0 +1,16 @@
+.homepage-content-container{
+    padding: 0 41px;
+}
+
+.homepage-title-container{
+    margin: 27px 0;
+}
+
+.homepage-title-container h1{
+    font-size: 48px;
+}
+
+.homepage-title-container h2{
+    font-size: 24px;
+    color: var(--color-font-tertiary);
+}
