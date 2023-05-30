@@ -1,0 +1,26 @@
+.form-container {
+    background-color: var(--color-card-bg-primary);
+    margin: 54px 0;
+    border-radius: 16px;
+    padding: 54px 31px;
+}
+
+.form-container h1 {
+    margin-bottom: 12px;
+}
+
+form {
+    margin-bottom: 24px;
+}
+
+input[type="text"] {
+    width: 298px;
+    height: 40px;
+    padding: 0 17px;
+    border-radius: 4px;
+    border: solid 1px var(--color-font-placeholder);
+}
+
+input::placeholder {
+    color: var(--color-font-placeholder);
+}
