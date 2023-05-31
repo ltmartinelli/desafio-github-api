@@ -9,7 +9,7 @@ export default function ProfileCard({ profile }: Props)
 {
     return (
         <div className="profile-card">
-            <img className="profile-card-img" src={profile.avatar_url} alt="pic" />
+            <img className="profile-card-img" src={profile.avatar_url} alt="avatar" />
             <div className="profile-card-info">
                 <h2>Informações</h2>
                 <div className="profile-card-info-field-container">

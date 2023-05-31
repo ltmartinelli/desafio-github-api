@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Button from '../../../components/Button';
 import ProfileCard from '../../../components/ProfileCard';
 import { ProfileDTO } from '../../../models/profile';
 import * as profileService from '../../../services/profile-service.ts';
