@@ -39,3 +39,7 @@
     display: grid;
     gap: 5px;
 }
+
+.profile-url{
+    color: var(--color-font-link);
+}

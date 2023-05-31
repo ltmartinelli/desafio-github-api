@@ -13,7 +13,7 @@ export default function ProfileCard({ profile }: Props)
             <div className="profile-card-info">
                 <h2>Informações</h2>
                 <div className="profile-card-info-field-container">
-                    <div className="profile-card-info-field"><b>Perfil:</b> {profile.url} </div>
+                    <div className="profile-card-info-field"><b>Perfil:</b> <span className="profile-url">{profile.url}</span></div>
                     <div className="profile-card-info-field"><b>Seguidores:</b> {profile.followers}</div>
                     <div className="profile-card-info-field"><b>Localidade:</b> {profile.location}</div>
                     <div className="profile-card-info-field"><b>Nome:</b> {profile.name}</div>
