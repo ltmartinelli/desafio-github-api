@@ -1,5 +1,6 @@
 import './styles.css';
 import Button from "../../../components/Button";
+import { Link } from 'react-router-dom';
 
 export default function HomePage()
 {
@@ -10,7 +11,7 @@ export default function HomePage()
                     <h1>Desafio Github API</h1>
                     <h2>DevSuperior - Escola de programação</h2>
                 </div>
-                <Button text="Começar" />
+                <Link to="/search"><Button text="Começar" /></Link>
             </div>
         </main>
     );

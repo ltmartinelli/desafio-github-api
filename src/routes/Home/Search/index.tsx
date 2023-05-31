@@ -1,6 +1,8 @@
 import Button from '../../../components/Button';
 import './styles.css';
 
+const name = "NELIO";
+
 export default function Search()
 {
     return (
@@ -23,7 +25,7 @@ export default function Search()
                             <div className="profile-card-info-field"><b>Perfil:</b> https://api.github.com/users/acenelio </div>
                             <div className="profile-card-info-field"><b>Seguidores:</b> 4379</div>
                             <div className="profile-card-info-field"><b>Localidade:</b> Uberlandia</div>
-                            <div className="profile-card-info-field"><b>Nome:</b> Nelio Alives</div>
+                            <div className="profile-card-info-field"><b>Nome:</b> {name}</div>
                         </div>
                     </div>
                 </div>
