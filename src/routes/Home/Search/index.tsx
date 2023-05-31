@@ -17,16 +17,22 @@ export default function Search()
 
     const [formData, setFormData] = useState<FormData>({ profileName: "" });
 
-    const[profileName, setProfileName] = useState<string>("");
+    const [profileName, setProfileName] = useState<string>("");
 
     useEffect(() =>
     {
         profileService.getProfile(profileName)
             .then(response =>
             {
-                setProfile(response.data)
+                setProfile(response.data);
             }
             )
+            .catch(() =>
+            {
+                {
+                    setProfile(undefined);
+                }
+            })
     }, [profileName]
     )
 
@@ -57,9 +63,16 @@ export default function Search()
                 </div>
 
                 {
-                    profile &&
-                    <ProfileCard profile={profile} />
+                    profile ?
+                        <ProfileCard profile={profile} />
+                        :
+                        profileName ?
+                            <h1>Erro ao buscar usuário</h1>
+                            :
+                            <>
+                            </>
                 }
+
 
             </div>
         </main>
